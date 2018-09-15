@@ -8052,7 +8052,7 @@ part number 2062-2P from STA</description>
 <part name="12V" library="con-phoenix-smkdsp" library_urn="urn:adsk.eagle:library:180" deviceset="SMKDSP_1,5/2" device="" package3d_urn="urn:adsk.eagle:package:9814/1"/>
 <part name="VIN" library="con-phoenix-smkdsp" library_urn="urn:adsk.eagle:library:180" deviceset="SMKDSP_1,5/2" device="" package3d_urn="urn:adsk.eagle:package:9814/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="PC817" device="" package3d_urn="urn:adsk.eagle:package:21938/1"/>
+<part name="PC817" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="PC817" device="" package3d_urn="urn:adsk.eagle:package:21938/1"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="220"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="220"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8061,11 +8061,19 @@ part number 2062-2P from STA</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="4.7k"/>
-<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
+<part name="TEMPERATURE1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SWITCH" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH3" package3d_urn="urn:adsk.eagle:package:38048/1"/>
-<part name="SDA__SCL" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH3" package3d_urn="urn:adsk.eagle:package:38048/1"/>
+<part name="SDA__SCL2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH3" package3d_urn="urn:adsk.eagle:package:38048/1"/>
+<part name="SDA__SCL1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH3" package3d_urn="urn:adsk.eagle:package:38048/1"/>
+<part name="TEMPERATURE2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
+<part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8075,7 +8083,7 @@ part number 2062-2P from STA</description>
 <instances>
 <instance part="TLE5205" gate="G$1" x="12.7" y="-43.18"/>
 <instance part="GND1" gate="1" x="27.94" y="-53.34"/>
-<instance part="R7" gate="G$1" x="-2.54" y="-43.18"/>
+<instance part="R7" gate="G$1" x="-5.08" y="-43.18"/>
 <instance part="R8" gate="G$1" x="-7.62" y="-48.26"/>
 <instance part="RELAY" gate="1" x="7.62" y="7.62"/>
 <instance part="RELAY" gate="2" x="25.4" y="2.54"/>
@@ -8083,8 +8091,8 @@ part number 2062-2P from STA</description>
 <instance part="GND4" gate="1" x="7.62" y="-20.32"/>
 <instance part="P+4" gate="1" x="20.32" y="12.7"/>
 <instance part="P+7" gate="1" x="7.62" y="33.02"/>
-<instance part="MOTOR1" gate="-1" x="43.18" y="-38.1" rot="R180"/>
-<instance part="MOTOR1" gate="-2" x="43.18" y="-48.26" rot="R180"/>
+<instance part="MOTOR1" gate="-1" x="38.1" y="-38.1" rot="R180"/>
+<instance part="MOTOR1" gate="-2" x="38.1" y="-48.26" rot="R180"/>
 <instance part="P+8" gate="1" x="119.38" y="-73.66" rot="R270"/>
 <instance part="PELTIER1" gate="-1" x="129.54" y="-60.96" rot="R180"/>
 <instance part="PELTIER1" gate="-2" x="129.54" y="-55.88" rot="R180"/>
@@ -8104,7 +8112,7 @@ part number 2062-2P from STA</description>
 <instance part="VIN" gate="-1" x="99.06" y="-10.16" rot="R180"/>
 <instance part="VIN" gate="-2" x="99.06" y="-5.08" rot="R180"/>
 <instance part="P+1" gate="1" x="78.74" y="-33.02" rot="R90"/>
-<instance part="OK1" gate="A" x="0" y="-5.08"/>
+<instance part="PC817" gate="A" x="0" y="-5.08"/>
 <instance part="R1" gate="G$1" x="-15.24" y="-12.7" rot="R90"/>
 <instance part="R2" gate="G$1" x="7.62" y="20.32" rot="R90"/>
 <instance part="GND2" gate="1" x="86.36" y="-7.62"/>
@@ -8113,11 +8121,19 @@ part number 2062-2P from STA</description>
 <instance part="P+2" gate="1" x="76.2" y="7.62" rot="R90"/>
 <instance part="GND6" gate="1" x="91.44" y="17.78"/>
 <instance part="R3" gate="G$1" x="83.82" y="15.24" rot="R90"/>
-<instance part="J1" gate="J$1" x="22.86" y="55.88"/>
+<instance part="TEMPERATURE1" gate="J$1" x="22.86" y="55.88"/>
 <instance part="GND7" gate="1" x="40.64" y="50.8"/>
 <instance part="P+3" gate="1" x="40.64" y="66.04"/>
 <instance part="SWITCH" gate="G$1" x="93.98" y="10.16" rot="R180"/>
-<instance part="SDA__SCL" gate="G$1" x="2.54" y="78.74" rot="R180"/>
+<instance part="SDA__SCL2" gate="G$1" x="2.54" y="78.74" rot="R180"/>
+<instance part="SDA__SCL1" gate="G$1" x="2.54" y="91.44" rot="R180"/>
+<instance part="TEMPERATURE2" gate="J$1" x="22.86" y="76.2"/>
+<instance part="GND12" gate="1" x="40.64" y="71.12"/>
+<instance part="P+5" gate="1" x="40.64" y="86.36"/>
+<instance part="R6" gate="G$1" x="58.42" y="-73.66" rot="R90"/>
+<instance part="R11" gate="G$1" x="58.42" y="-50.8" rot="R90"/>
+<instance part="GND13" gate="1" x="58.42" y="-83.82"/>
+<instance part="GND14" gate="1" x="66.04" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -8128,7 +8144,7 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="0" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="7.62" y="-17.78"/>
-<pinref part="OK1" gate="A" pin="EMIT"/>
+<pinref part="PC817" gate="A" pin="EMIT"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="91"/>
@@ -8188,9 +8204,24 @@ part number 2062-2P from STA</description>
 <wire x1="83.82" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J$1" pin="1"/>
+<pinref part="TEMPERATURE1" gate="J$1" pin="1"/>
 <wire x1="30.48" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TEMPERATURE2" gate="J$1" pin="1"/>
+<wire x1="30.48" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="58.42" y1="-78.74" x2="58.42" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="58.42" y1="-45.72" x2="66.04" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -8226,7 +8257,7 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
 <junction x="7.62" y="2.54"/>
-<pinref part="OK1" gate="A" pin="COL"/>
+<pinref part="PC817" gate="A" pin="COL"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8241,7 +8272,6 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="IN1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="0" y1="-43.18" x2="2.54" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8254,14 +8284,14 @@ part number 2062-2P from STA</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="OUT1"/>
-<wire x1="38.1" y1="-38.1" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-38.1" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="MOTOR1" gate="-1" pin="KL"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="OUT2"/>
-<wire x1="38.1" y1="-48.26" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-48.26" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="MOTOR1" gate="-2" pin="KL"/>
 </segment>
 </net>
@@ -8283,7 +8313,7 @@ part number 2062-2P from STA</description>
 <net name="MOTOR-IN1" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="-43.18" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-43.18" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-33.02" y="-43.18" size="1.778" layer="95"/>
 <label x="-33.02" y="-43.18" size="1.778" layer="95"/>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -8301,7 +8331,7 @@ part number 2062-2P from STA</description>
 <segment>
 <wire x1="-10.16" y1="-2.54" x2="-15.24" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-33.02" y="-2.54" size="1.778" layer="95"/>
-<pinref part="OK1" gate="A" pin="A"/>
+<pinref part="PC817" gate="A" pin="A"/>
 </segment>
 <segment>
 <pinref part="MICRO" gate="G$1" pin="IO9*"/>
@@ -8331,44 +8361,51 @@ part number 2062-2P from STA</description>
 </net>
 <net name="PELTIER-PWM" class="0">
 <segment>
-<pinref part="VNH5019" gate="G$1" pin="PWM"/>
-<wire x1="81.28" y1="-60.96" x2="76.2" y2="-60.96" width="0.1524" layer="91"/>
-<label x="58.42" y="-60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MICRO" gate="G$1" pin="D5*"/>
 <wire x1="-68.58" y1="53.34" x2="-78.74" y2="53.34" width="0.1524" layer="91"/>
 <label x="-96.52" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VNH5019" gate="G$1" pin="PWM"/>
+<wire x1="81.28" y1="-60.96" x2="76.2" y2="-60.96" width="0.1524" layer="91"/>
+<label x="53.34" y="-60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PELTIER-INB" class="0">
-<segment>
-<pinref part="VNH5019" gate="G$1" pin="INB"/>
-<wire x1="81.28" y1="-68.58" x2="76.2" y2="-68.58" width="0.1524" layer="91"/>
-<label x="60.96" y="-68.58" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MICRO" gate="G$1" pin="D4*"/>
 <wire x1="-68.58" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
 <label x="-96.52" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="-68.58" x2="60.96" y2="-68.58" width="0.1524" layer="91"/>
+<label x="63.5" y="-68.58" size="1.778" layer="95"/>
+<pinref part="VNH5019" gate="G$1" pin="INB"/>
+<wire x1="81.28" y1="-68.58" x2="71.12" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-68.58" x2="71.12" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PELTIER-INA" class="0">
-<segment>
-<pinref part="VNH5019" gate="G$1" pin="INA"/>
-<wire x1="81.28" y1="-55.88" x2="76.2" y2="-55.88" width="0.1524" layer="91"/>
-<label x="60.96" y="-55.88" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MICRO" gate="G$1" pin="D6*"/>
 <wire x1="-68.58" y1="50.8" x2="-78.74" y2="50.8" width="0.1524" layer="91"/>
 <label x="-96.52" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="60.96" y1="-55.88" x2="58.42" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<label x="63.5" y="-55.88" size="1.778" layer="95"/>
+<pinref part="VNH5019" gate="G$1" pin="INA"/>
+<wire x1="81.28" y1="-55.88" x2="71.12" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-55.88" x2="71.12" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PELTIER-CURRENT" class="0">
 <segment>
 <pinref part="VNH5019" gate="G$1" pin="CS"/>
 <wire x1="81.28" y1="-63.5" x2="76.2" y2="-63.5" width="0.1524" layer="91"/>
+<label x="78.74" y="-43.18" size="1.778" layer="95"/>
 <label x="53.34" y="-63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8399,22 +8436,16 @@ part number 2062-2P from STA</description>
 <pinref part="SWITCH" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J$1" pin="3"/>
+<pinref part="TEMPERATURE1" gate="J$1" pin="3"/>
 <wire x1="30.48" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="40.64" y1="58.42" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$14" class="0">
 <segment>
-<pinref part="VNH5019" gate="G$1" pin="ENA"/>
-<wire x1="81.28" y1="-58.42" x2="76.2" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="VNH5019" gate="G$1" pin="ENB"/>
-<wire x1="81.28" y1="-66.04" x2="76.2" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="TEMPERATURE2" gate="J$1" pin="3"/>
+<wire x1="30.48" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="40.64" y1="78.74" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -8426,7 +8457,12 @@ part number 2062-2P from STA</description>
 <segment>
 <wire x1="-5.08" y1="78.74" x2="-12.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="-12.7" y="78.74" size="1.778" layer="95"/>
-<pinref part="SDA__SCL" gate="G$1" pin="1"/>
+<pinref part="SDA__SCL2" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-5.08" y1="91.44" x2="-12.7" y2="91.44" width="0.1524" layer="91"/>
+<label x="-12.7" y="91.44" size="1.778" layer="95"/>
+<pinref part="SDA__SCL1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -8438,7 +8474,12 @@ part number 2062-2P from STA</description>
 <segment>
 <wire x1="-5.08" y1="76.2" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="-12.7" y="76.2" size="1.778" layer="95"/>
-<pinref part="SDA__SCL" gate="G$1" pin="2"/>
+<pinref part="SDA__SCL2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="-5.08" y1="88.9" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="-12.7" y="88.9" size="1.778" layer="95"/>
+<pinref part="SDA__SCL1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -8451,18 +8492,6 @@ part number 2062-2P from STA</description>
 <pinref part="VIN" gate="-1" pin="KL"/>
 <wire x1="93.98" y1="-10.16" x2="76.2" y2="-10.16" width="0.1524" layer="91"/>
 <label x="76.2" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TEMPERATURE" class="0">
-<segment>
-<pinref part="MICRO" gate="G$1" pin="A1"/>
-<wire x1="-33.02" y1="45.72" x2="-27.94" y2="45.72" width="0.1524" layer="91"/>
-<label x="-27.94" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="J$1" pin="2"/>
-<wire x1="30.48" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<label x="40.64" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTOR-ERRORFLAG" class="0">
@@ -8508,7 +8537,7 @@ part number 2062-2P from STA</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="OK1" gate="A" pin="C"/>
+<pinref part="PC817" gate="A" pin="C"/>
 <wire x1="-15.24" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8523,9 +8552,44 @@ part number 2062-2P from STA</description>
 <junction x="7.62" y="12.7"/>
 </segment>
 </net>
+<net name="TEMPERATURE2" class="0">
+<segment>
+<pinref part="TEMPERATURE2" gate="J$1" pin="2"/>
+<wire x1="30.48" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="40.64" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="A5"/>
+<wire x1="-33.02" y1="55.88" x2="-27.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="-27.94" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMPERATURE1" class="0">
+<segment>
+<pinref part="TEMPERATURE1" gate="J$1" pin="2"/>
+<wire x1="30.48" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<label x="40.64" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="A1"/>
+<wire x1="-33.02" y1="45.72" x2="-27.94" y2="45.72" width="0.1524" layer="91"/>
+<label x="-27.94" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,81.28,-58.42,N$14,,,,,"/>
+<approved hash="106,1,81.28,-66.04,N$18,,,,,"/>
+<approved hash="106,1,-68.58,48.26,N$21,,,,,"/>
+<approved hash="106,1,-68.58,45.72,N$22,,,,,"/>
+<approved hash="113,1,29.2365,57.3126,TEMPERATURE1,,,,,"/>
+<approved hash="113,1,89.5773,7.45744,SWITCH,,,,,"/>
+<approved hash="113,1,-1.86267,76.0374,SDA__SCL2,,,,,"/>
+<approved hash="113,1,-1.86267,88.7374,SDA__SCL1,,,,,"/>
+<approved hash="113,1,29.2365,77.6326,TEMPERATURE2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
