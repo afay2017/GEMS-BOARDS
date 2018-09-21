@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.025" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2046,19 +2046,19 @@ design rules under a new name.</description>
 <contactref element="12V" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="TEMPERATURE1" pad="1"/>
-<polygon width="0.254" layer="16" isolate="0.635">
+<polygon width="0.254" layer="16" isolate="0.381">
 <vertex x="-0.635" y="83.82"/>
 <vertex x="-0.635" y="-0.635"/>
 <vertex x="99.695" y="-0.635"/>
 <vertex x="99.695" y="83.82"/>
 </polygon>
-<polygon width="0.254" layer="1" isolate="0.635">
+<polygon width="0.127" layer="1" isolate="0.381">
 <vertex x="-1.905" y="85.09"/>
 <vertex x="-1.905" y="-1.27"/>
 <vertex x="99.695" y="-1.27"/>
 <vertex x="99.695" y="85.09"/>
 </polygon>
-<via x="65.405" y="45.085" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="65.405" y="45.72" extent="1-16" drill="0.35" shape="octagon"/>
 <via x="8.89" y="52.705" extent="1-16" drill="0.35" shape="octagon"/>
 <via x="45.085" y="35.56" extent="1-16" drill="0.35"/>
 <contactref element="TEMPERATURE2" pad="1"/>
@@ -2150,9 +2150,9 @@ design rules under a new name.</description>
 <wire x1="92.309" y1="57.15" x2="89.769" y2="59.69" width="2.54" layer="16"/>
 <wire x1="87.63" y1="24.17" x2="92.309" y2="24.133159375" width="2.54" layer="16"/>
 <wire x1="92.309" y1="24.133159375" x2="92.309" y2="57.15" width="2.54" layer="16"/>
-<wire x1="73.025" y1="24.13" x2="87.59" y2="24.13" width="2.54" layer="1"/>
+<wire x1="73.025" y1="24.13" x2="87.59" y2="24.13" width="1.905" layer="1"/>
 <wire x1="87.59" y1="24.13" x2="87.63" y2="24.17" width="2.54" layer="1"/>
-<wire x1="73.025" y1="24.13" x2="73.025" y2="21.59" width="2.54" layer="1"/>
+<wire x1="73.025" y1="24.13" x2="73.025" y2="21.59" width="1.905" layer="1"/>
 <wire x1="73.025" y1="21.59" x2="74.89" y2="21.59" width="2.54" layer="16"/>
 <wire x1="74.89" y1="21.59" x2="77.47" y2="24.17" width="2.54" layer="16"/>
 <wire x1="77.47" y1="24.17" x2="87.63" y2="24.17" width="2.54" layer="16"/>
@@ -2224,10 +2224,11 @@ design rules under a new name.</description>
 <signal name="MOTOR-ENABLE">
 <contactref element="MICRO" pad="D9"/>
 <contactref element="PC817" pad="1"/>
-<wire x1="24.13" y1="70.485" x2="24.13" y2="59.69" width="1.27" layer="16"/>
+<wire x1="24.13" y1="70.485" x2="24.13" y2="59.055" width="1.27" layer="16"/>
 <wire x1="30.48" y1="70.485" x2="24.13" y2="70.485" width="1.27" layer="16"/>
 <wire x1="36.195" y1="64.77" x2="30.48" y2="70.485" width="1.27" layer="16"/>
-<wire x1="24.13" y1="59.69" x2="26.67" y2="57.15" width="1.27" layer="16"/>
+<wire x1="24.13" y1="59.055" x2="26.035" y2="57.15" width="1.27" layer="16"/>
+<wire x1="26.035" y1="57.15" x2="26.67" y2="57.15" width="1.27" layer="16"/>
 </signal>
 <signal name="PELTIER-OUTB">
 <contactref element="VNH5019" pad="OUTB2"/>
@@ -2270,12 +2271,12 @@ design rules under a new name.</description>
 <contactref element="R6" pad="2"/>
 <contactref element="VNH5019" pad="INB"/>
 <wire x1="32.974871875" y1="39.959871875" x2="33.3375" y2="40.3225" width="0.635" layer="1"/>
-<wire x1="39.37" y1="26.67" x2="40.005" y2="26.67" width="0.635" layer="1"/>
 <wire x1="36.195" y1="34.925" x2="37.465" y2="33.655" width="0.635" layer="1"/>
 <wire x1="37.465" y1="33.655" x2="37.465" y2="31.115" width="0.635" layer="1"/>
 <wire x1="37.465" y1="31.115" x2="37.465" y2="27.94" width="0.635" layer="1"/>
 <wire x1="37.465" y1="27.94" x2="38.735" y2="26.67" width="0.635" layer="1"/>
-<wire x1="38.735" y1="26.67" x2="40.005" y2="26.67" width="0.635" layer="1"/>
+<wire x1="38.735" y1="26.67" x2="39.37" y2="26.67" width="0.635" layer="1"/>
+<wire x1="39.37" y1="26.67" x2="40.005" y2="26.67" width="0.635" layer="1"/>
 </signal>
 <signal name="PELTIER-INA">
 <contactref element="MICRO" pad="D6"/>
@@ -2285,8 +2286,9 @@ design rules under a new name.</description>
 <wire x1="40.005" y1="39.37" x2="38.1" y2="39.37" width="0.635" layer="1"/>
 <wire x1="38.1" y1="39.37" x2="33.3375" y2="44.1325" width="0.635" layer="1"/>
 <wire x1="33.3375" y1="44.1325" x2="27.94" y2="49.53" width="0.635" layer="1"/>
-<wire x1="33.609871875" y1="44.404875" x2="33.609871875" y2="44.404871875" width="0.635" layer="1"/>
+<wire x1="33.60986875" y1="44.404875" x2="32.974871875" y2="44.404875" width="0.635" layer="1"/>
 <wire x1="33.609871875" y1="44.404871875" x2="33.3375" y2="44.1325" width="0.635" layer="1"/>
+<wire x1="33.60986875" y1="44.404875" x2="33.609871875" y2="44.404871875" width="0.635" layer="1"/>
 </signal>
 <signal name="PELTIER-CURRENT">
 <contactref element="VNH5019" pad="CS"/>
@@ -2423,18 +2425,10 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="5,16,e5ee91c64e8dcef5"/>
-<approved hash="5,16,5bdfe6e5c2e41bc4"/>
-<approved hash="5,16,2d53e35a809f1d4b"/>
-<approved hash="5,16,4683c6537ec48e1d"/>
-<approved hash="5,16,c2ac42a3f2320234"/>
-<approved hash="5,16,7aafe35abb88a381"/>
-<approved hash="5,1,fc293019531bd1a3"/>
-<approved hash="5,1,e59fddc124f37dd4"/>
-<approved hash="5,1,fc21667d0537d1e3"/>
-<approved hash="5,1,cc0ffc52da366b97"/>
-<approved hash="5,16,4918caca24e7c162"/>
-<approved hash="5,16,82dbdb9bcb509044"/>
+<approved hash="5,16,6906191629847025"/>
+<approved hash="5,16,d02bdf3d7e5272b6"/>
+<approved hash="5,16,b05f116f3c74a486"/>
+<approved hash="5,16,e2ac8de0ddc9317b"/>
 </errors>
 </board>
 </drawing>
