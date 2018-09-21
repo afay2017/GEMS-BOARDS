@@ -8083,11 +8083,11 @@ part number 2062-2P from STA</description>
 <instances>
 <instance part="TLE5205" gate="G$1" x="12.7" y="-43.18"/>
 <instance part="GND1" gate="1" x="27.94" y="-53.34"/>
-<instance part="R7" gate="G$1" x="-5.08" y="-43.18"/>
+<instance part="R7" gate="G$1" x="-7.62" y="-43.18"/>
 <instance part="R8" gate="G$1" x="-7.62" y="-48.26"/>
 <instance part="RELAY" gate="1" x="7.62" y="7.62"/>
 <instance part="RELAY" gate="2" x="25.4" y="2.54"/>
-<instance part="D2" gate="1" x="0" y="7.62" rot="R90"/>
+<instance part="D2" gate="1" x="-7.62" y="7.62" rot="R90"/>
 <instance part="GND4" gate="1" x="7.62" y="-20.32"/>
 <instance part="P+4" gate="1" x="20.32" y="12.7"/>
 <instance part="P+7" gate="1" x="7.62" y="33.02"/>
@@ -8249,11 +8249,11 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="25.4" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="RELAY-TO-OPTO" class="0">
 <segment>
 <pinref part="RELAY" gate="1" pin="2"/>
 <pinref part="D2" gate="1" pin="A"/>
-<wire x1="0" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
 <junction x="7.62" y="2.54"/>
@@ -8261,34 +8261,35 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RELAY-TO-MOTORCONTROLLER" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="VS"/>
 <pinref part="RELAY" gate="2" pin="P"/>
 <wire x1="25.4" y1="-35.56" x2="25.4" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="IN1" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="IN1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="-43.18" x2="0" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="IN2" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="IN2"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="0" y1="-48.26" x2="-2.54" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="MOTOR-OUT1" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="OUT1"/>
 <wire x1="33.02" y1="-38.1" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="MOTOR1" gate="-1" pin="KL"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="MOTOR-OUT2" class="0">
 <segment>
 <pinref part="TLE5205" gate="G$1" pin="OUT2"/>
 <wire x1="33.02" y1="-48.26" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
@@ -8313,7 +8314,6 @@ part number 2062-2P from STA</description>
 <net name="MOTOR-IN1" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="-43.18" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-33.02" y="-43.18" size="1.778" layer="95"/>
 <label x="-33.02" y="-43.18" size="1.778" layer="95"/>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -8339,7 +8339,7 @@ part number 2062-2P from STA</description>
 <label x="-96.52" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="PELTIER-OUTB" class="0">
 <segment>
 <pinref part="VNH5019" gate="G$1" pin="OUTB2"/>
 <pinref part="VNH5019" gate="G$1" pin="OUTB1"/>
@@ -8349,7 +8349,7 @@ part number 2062-2P from STA</description>
 <junction x="111.76" y="-60.96"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="PELTIER-OUTA" class="0">
 <segment>
 <pinref part="VNH5019" gate="G$1" pin="OUTA2"/>
 <pinref part="VNH5019" gate="G$1" pin="OUTA1"/>
@@ -8534,18 +8534,18 @@ part number 2062-2P from STA</description>
 <pinref part="SWITCH" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="POST-OPTO-DIODE" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="PC817" gate="A" pin="C"/>
 <wire x1="-15.24" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="FLYBACK-DIODE+" class="0">
 <segment>
 <pinref part="RELAY" gate="1" pin="1"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="0" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="12.7" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
