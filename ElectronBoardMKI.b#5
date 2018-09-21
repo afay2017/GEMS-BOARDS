@@ -2633,7 +2633,7 @@ design rules under a new name.</description>
 <wire x1="41.91" y1="83.82" x2="44.45" y2="83.82" width="0.635" layer="1"/>
 <wire x1="44.45" y1="83.82" x2="45.72" y2="82.55" width="0.635" layer="1"/>
 </signal>
-<signal name="N$11">
+<signal name="BLUE-PNP-BASE">
 <contactref element="R2" pad="2"/>
 <contactref element="T2" pad="2"/>
 <contactref element="R5" pad="2"/>
@@ -2651,7 +2651,7 @@ design rules under a new name.</description>
 <wire x1="68.58" y1="78.105" x2="67.945" y2="78.74" width="0.635" layer="1"/>
 <wire x1="69.215" y1="76.835" x2="68.58" y2="77.47" width="0.635" layer="1"/>
 </signal>
-<signal name="N$13">
+<signal name="RED-PNP-BASE">
 <contactref element="R4" pad="2"/>
 <contactref element="T3" pad="2"/>
 <contactref element="R7" pad="2"/>
@@ -2666,7 +2666,7 @@ design rules under a new name.</description>
 <wire x1="48.895" y1="75.565" x2="48.895" y2="72.39" width="0.635" layer="1"/>
 <wire x1="48.26" y1="76.2" x2="48.895" y2="75.565" width="0.635" layer="1"/>
 </signal>
-<signal name="N$15">
+<signal name="GREEN-PNP-BASE">
 <contactref element="R9" pad="2"/>
 <contactref element="T4" pad="2"/>
 <contactref element="R10" pad="2"/>
