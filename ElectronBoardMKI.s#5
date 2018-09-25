@@ -16932,6 +16932,10 @@ by R. Vogg  15.March.2002</description>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_08" device="LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38140/1"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="4.7k"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="4.7k"/>
+<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
+<part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16996,6 +17000,10 @@ by R. Vogg  15.March.2002</description>
 <instance part="J1" gate="G$1" x="-200.66" y="17.78"/>
 <instance part="R1" gate="G$1" x="-25.4" y="68.58" rot="R90"/>
 <instance part="R3" gate="G$1" x="-5.08" y="68.58" rot="R90"/>
+<instance part="R16" gate="G$1" x="-139.7" y="-22.86" rot="R90"/>
+<instance part="R17" gate="G$1" x="-147.32" y="-50.8" rot="R90"/>
+<instance part="GND2" gate="1" x="-147.32" y="-58.42"/>
+<instance part="GND3" gate="1" x="-132.08" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -17107,6 +17115,15 @@ by R. Vogg  15.March.2002</description>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="88.9" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="-139.7" y1="-17.78" x2="-132.08" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -17269,6 +17286,8 @@ by R. Vogg  15.March.2002</description>
 <pinref part="U$2" gate="G$1" pin="INA"/>
 <wire x1="-134.62" y1="-30.48" x2="-139.7" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-157.48" y="-30.48" size="1.778" layer="95"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-139.7" y1="-27.94" x2="-139.7" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D2"/>
@@ -17279,8 +17298,10 @@ by R. Vogg  15.March.2002</description>
 <net name="COOLING-INB" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="INB"/>
-<wire x1="-134.62" y1="-43.18" x2="-139.7" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-160.02" y="-43.18" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="-147.32" y1="-45.72" x2="-147.32" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-43.18" x2="-134.62" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D4"/>
@@ -17376,7 +17397,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-99.06" y1="60.96" x2="-96.52" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="COOLING-OUTA" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="OUTA1"/>
 <pinref part="U$2" gate="G$1" pin="OUTA2"/>
@@ -17390,7 +17411,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="-91.44" y="-27.94"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="COOLING-OUTB" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="OUTB1"/>
 <pinref part="U$2" gate="G$1" pin="OUTB2"/>
@@ -17439,7 +17460,7 @@ by R. Vogg  15.March.2002</description>
 <label x="132.08" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="BLUE-NPN-BASE" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T2" gate="G$1" pin="B"/>
@@ -17450,14 +17471,14 @@ by R. Vogg  15.March.2002</description>
 <junction x="91.44" y="73.66"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="BLUE-NPN-EMITTER" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="T2" gate="G$1" pin="E"/>
 <wire x1="101.6" y1="66.04" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="RED-NPN-BASE" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="T3" gate="G$1" pin="B"/>
@@ -17468,14 +17489,14 @@ by R. Vogg  15.March.2002</description>
 <junction x="182.88" y="73.66"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="RED-NPN-EMITTER" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="T3" gate="G$1" pin="E"/>
 <wire x1="193.04" y1="66.04" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="GREEN-NPN-BASE" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="T4" gate="G$1" pin="B"/>
@@ -17486,7 +17507,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="276.86" y="73.66"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="GREEN-NPN-EMITTER" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="T4" gate="G$1" pin="E"/>
