@@ -1275,6 +1275,28 @@ type 0207, grid 12 mm</description>
 <rectangle x1="4.445" y1="-0.3048" x2="5.3086" y2="0.3048" layer="21"/>
 <rectangle x1="-5.3086" y1="-0.3048" x2="-4.445" y2="0.3048" layer="21"/>
 </package>
+<package name="C050-035X075" urn="urn:adsk.eagle:footprint:25764/1" library_version="1">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 3.5 x 7.5 mm</description>
+<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="1.524" x2="-3.683" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.778" x2="3.429" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="-1.524" x2="3.683" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="1.778" x2="-3.429" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="1.778" x2="3.683" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.429" y1="-1.778" x2="3.683" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="-1.524" x2="-3.429" y2="-1.778" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="1.524" x2="-3.429" y2="1.778" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="-3.556" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.556" y="-3.429" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 <package name="E5-8,5" urn="urn:adsk.eagle:footprint:25421/1" library_version="1">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 5.08 mm, diameter 8.5 mm</description>
@@ -1301,6 +1323,13 @@ grid 5.08 mm, diameter 8.5 mm</description>
 <package3d name="0207/12" urn="urn:adsk.eagle:package:25938/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 12 mm</description>
+</package3d>
+<package3d name="C050-035X075" urn="urn:adsk.eagle:package:26193/1" type="box" library_version="1">
+<description>CAPACITOR
+grid 5 mm, outline 3.5 x 7.5 mm</description>
+<packageinstances>
+<packageinstance name="C050-035X075"/>
+</packageinstances>
 </package3d>
 <package3d name="E5-8,5" urn="urn:adsk.eagle:package:25860/1" type="box" library_version="1">
 <description>ELECTROLYTIC CAPACITOR
@@ -2301,8 +2330,8 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="3041244" x="17.4625" y="141.2875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="69C8588" x="17.4625" y="141.2875" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="SCL__SDA1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="80.01" y="101.6" rot="R90"/>
-<element name="SCL__SDA2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="80.01" y="110.49" rot="R90"/>
+<element name="SCL___SDA1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="80.01" y="101.6" rot="R90"/>
+<element name="SCL___SDA2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="80.01" y="110.49" rot="R90"/>
 <element name="IN-TEMP" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38065/1" value="" x="11.7475" y="114.3" rot="R270"/>
 <element name="OUT-TEMP" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38065/1" value="" x="12.065" y="101.6" rot="R270"/>
 <element name="SCREEN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="2X5-SHROUDED" package3d_urn="urn:adsk.eagle:package:38000/1" value="" x="80.01" y="82.55">
@@ -2341,11 +2370,11 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-10899" x="68.2625" y="141.12875" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="10uf" x="67.945" y="153.51125"/>
-<element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="0.05uf" x="78.89875" y="137.31875"/>
+<element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C050-035X075" package3d_urn="urn:adsk.eagle:package:26193/1" value="0.047uf" x="78.89875" y="137.31875"/>
 <element name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="1uf" x="77.62875" y="150.97125"/>
 <element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="10k" x="85.24875" y="143.66875" rot="R270"/>
-<element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="250uf" x="22.70125" y="155.575" rot="R180"/>
-<element name="SCL__SDA3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="11.7475" y="119.0625" rot="R90"/>
+<element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="220uf" x="22.70125" y="155.575" rot="R180"/>
+<element name="RX_______TX" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="11.7475" y="119.0625" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3088,8 +3117,8 @@ design rules under a new name.</description>
 <wire x1="50.8" y1="101.6" x2="54.61" y2="101.6" width="0.635" layer="1"/>
 </signal>
 <signal name="SCL-5V">
-<contactref element="SCL__SDA1" pad="2"/>
-<contactref element="SCL__SDA2" pad="2"/>
+<contactref element="SCL___SDA1" pad="2"/>
+<contactref element="SCL___SDA2" pad="2"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="R13" pad="1"/>
 <wire x1="80.01" y1="113.157" x2="80.01" y2="113.03" width="0.635" layer="1"/>
@@ -3104,8 +3133,8 @@ design rules under a new name.</description>
 <wire x1="80.01" y1="104.14" x2="80.01" y2="104.267" width="0.635" layer="1"/>
 </signal>
 <signal name="SDA-5V">
-<contactref element="SCL__SDA1" pad="1"/>
-<contactref element="SCL__SDA2" pad="1"/>
+<contactref element="SCL___SDA1" pad="1"/>
+<contactref element="SCL___SDA2" pad="1"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="R15" pad="1"/>
 <wire x1="79.883" y1="101.6" x2="80.01" y2="101.473" width="0.635" layer="1"/>
@@ -3139,7 +3168,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="U1" pad="5"/>
-<contactref element="C8" pad="+"/>
+<contactref element="C8" pad="1"/>
 <contactref element="C3" pad="+"/>
 <wire x1="72.0725" y1="137.31875" x2="76.35875" y2="137.31875" width="1.27" layer="1"/>
 <wire x1="72.0725" y1="137.31875" x2="66.8592125" y2="137.31875" width="1.27" layer="1"/>
@@ -3183,7 +3212,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$7">
 <contactref element="R19" pad="2"/>
-<contactref element="C8" pad="-"/>
+<contactref element="C8" pad="2"/>
 <wire x1="81.43875" y1="137.31875" x2="85.24875" y2="137.31875" width="1.27" layer="1"/>
 </signal>
 <signal name="N$10">
@@ -3192,7 +3221,7 @@ design rules under a new name.</description>
 <wire x1="13.0175" y1="138.7475" x2="21.9075" y2="138.7475" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX">
-<contactref element="SCL__SDA3" pad="1"/>
+<contactref element="RX_______TX" pad="1"/>
 <contactref element="U$1" pad="4"/>
 <wire x1="24.13" y1="116.84" x2="19.05" y2="116.84" width="0.635" layer="1"/>
 <wire x1="16.9545" y1="118.9355" x2="11.7475" y2="118.9355" width="0.635" layer="1"/>
@@ -3200,7 +3229,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TX">
 <contactref element="U$1" pad="3"/>
-<contactref element="SCL__SDA3" pad="2"/>
+<contactref element="RX_______TX" pad="2"/>
 <wire x1="20.32" y1="119.38" x2="24.13" y2="119.38" width="0.635" layer="1"/>
 <wire x1="11.7475" y1="121.7295" x2="17.9705" y2="121.7295" width="0.635" layer="1"/>
 <wire x1="17.9705" y1="121.7295" x2="20.32" y2="119.38" width="0.635" layer="1"/>
