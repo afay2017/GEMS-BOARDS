@@ -8509,7 +8509,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </class>
 </classes>
 <parts>
-<part name="TLE5205" library="infineon" library_urn="urn:adsk.eagle:library:245" deviceset="TLE5205-2" device="" package3d_urn="urn:adsk.eagle:package:15311/1"/>
+<part name="TLE5205" library="infineon" library_urn="urn:adsk.eagle:library:245" deviceset="TLE5205-2" device="S" package3d_urn="urn:adsk.eagle:package:15312/1" value="TLE5205-2S"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="1k"/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="1k"/>
