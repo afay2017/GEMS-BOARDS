@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.1.3*%
+%TF.CreationDate,2018-10-15T23:42:15Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Aidan Fay <aidanfay@stanford.edu>*%
+%TJ.B_ID,DisplayBoardMk1*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,1.570000*%
+%TJ.B_Size_X,82.000000*%
+%TJ.B_Size_Y,65.000000*%
+M02*
