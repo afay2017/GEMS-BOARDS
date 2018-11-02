@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -112,7 +113,13 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="_tanames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="_banames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="_taDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="_baDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="2" fill="9" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="3" fill="9" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -163,14 +170,19 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="84.2" y2="0" width="0" layer="20"/>
-<wire x1="84.2" y1="0" x2="84.2" y2="200" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="84" y2="0" width="0" layer="20"/>
+<wire x1="84" y1="0" x2="84.2" y2="200" width="0" layer="20"/>
 <wire x1="84.2" y1="200" x2="0" y2="200" width="0" layer="20"/>
 <wire x1="0" y1="200" x2="0" y2="0" width="0" layer="20"/>
-<hole x="6.15" y="6.15" drill="4"/>
-<hole x="78.05" y="6.15" drill="4"/>
-<hole x="6.15" y="193.85" drill="4"/>
-<hole x="78.05" y="193.85" drill="4"/>
+<hole x="6" y="6" drill="4"/>
+<hole x="78" y="6" drill="4"/>
+<hole x="6" y="194" drill="4"/>
+<hole x="78" y="194" drill="4"/>
+<wire x1="2" y1="264" x2="2" y2="217.5" width="0" layer="20"/>
+<wire x1="2" y1="217.5" x2="85.5" y2="217.5" width="0" layer="20"/>
+<wire x1="85.5" y1="217.5" x2="85.5" y2="218" width="0.1524" layer="20"/>
+<wire x1="85.5" y1="218" x2="85.5" y2="264" width="0" layer="20"/>
+<wire x1="85.5" y1="264" x2="2" y2="264" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="resistor" urn="urn:adsk.eagle:library:348">
@@ -1653,6 +1665,63 @@ There are for reference and you may need to adjust them for your application. Se
 <text x="0" y="13.2033" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-13.2033" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="NHD-C0220">
+<pad name="5" x="-1" y="-15.9" drill="0.8"/>
+<pad name="4" x="1" y="-15.9" drill="0.8"/>
+<pad name="6" x="-3" y="-15.9" drill="0.8"/>
+<pad name="3" x="3" y="-15.9" drill="0.8"/>
+<pad name="7" x="-5" y="-15.9" drill="0.8"/>
+<pad name="2" x="5" y="-15.9" drill="0.8"/>
+<pad name="8" x="-7" y="-15.9" drill="0.8"/>
+<pad name="1" x="7" y="-15.9" drill="0.8"/>
+<pad name="GK" x="-38.55" y="1.5" drill="1.6"/>
+<pad name="BK" x="-38.55" y="-1.5" drill="1.6"/>
+<pad name="A" x="-38.55" y="-4.5" drill="1.6"/>
+<pad name="RK" x="-38.55" y="4.5" drill="1.6"/>
+<hole x="-32.5" y="-19.8" drill="2.5"/>
+<hole x="32.5" y="-19.8" drill="2.5"/>
+<hole x="-32.5" y="13.3" drill="2.5"/>
+<hole x="32.5" y="13.3" drill="2.5"/>
+<wire x1="-35.8" y1="10.3" x2="35.8" y2="10.3" width="0.127" layer="51"/>
+<wire x1="35.8" y1="10.3" x2="35.8" y2="-16.8" width="0.127" layer="51"/>
+<wire x1="35.8" y1="-16.8" x2="-35.8" y2="-16.8" width="0.127" layer="51"/>
+<wire x1="-35.8" y1="-16.8" x2="-35.8" y2="10.3" width="0.127" layer="51"/>
+<wire x1="-36" y1="9" x2="-38" y2="9" width="0.127" layer="51"/>
+<wire x1="-38" y1="9" x2="-40" y2="7" width="0.127" layer="51"/>
+<wire x1="-40" y1="7" x2="-40" y2="-7" width="0.127" layer="51"/>
+<wire x1="-40" y1="-7" x2="-38" y2="-9" width="0.127" layer="51"/>
+<wire x1="-38" y1="-9" x2="-36" y2="-9" width="0.127" layer="51"/>
+<wire x1="-35" y1="11" x2="-35" y2="15" width="0.127" layer="51"/>
+<wire x1="-35" y1="15" x2="-34" y2="16" width="0.127" layer="51"/>
+<wire x1="-34" y1="16" x2="-31" y2="16" width="0.127" layer="51"/>
+<wire x1="-31" y1="16" x2="-30" y2="15" width="0.127" layer="51"/>
+<wire x1="-30" y1="15" x2="-30" y2="11" width="0.127" layer="51"/>
+<wire x1="30" y1="11" x2="30" y2="15" width="0.127" layer="51"/>
+<wire x1="30" y1="15" x2="31" y2="16" width="0.127" layer="51"/>
+<wire x1="31" y1="16" x2="34" y2="16" width="0.127" layer="51"/>
+<wire x1="34" y1="16" x2="35" y2="15" width="0.127" layer="51"/>
+<wire x1="35" y1="15" x2="35" y2="11" width="0.127" layer="51"/>
+<wire x1="-35" y1="-17" x2="-35" y2="-21" width="0.127" layer="51"/>
+<wire x1="-35" y1="-21" x2="-34" y2="-22" width="0.127" layer="51"/>
+<wire x1="-34" y1="-22" x2="-31" y2="-22" width="0.127" layer="51"/>
+<wire x1="-31" y1="-22" x2="-30" y2="-21" width="0.127" layer="51"/>
+<wire x1="-30" y1="-21" x2="-30" y2="-17" width="0.127" layer="51"/>
+<wire x1="30" y1="-17" x2="30" y2="-21" width="0.127" layer="51"/>
+<wire x1="30" y1="-21" x2="31" y2="-22" width="0.127" layer="51"/>
+<wire x1="31" y1="-22" x2="34" y2="-22" width="0.127" layer="51"/>
+<wire x1="34" y1="-22" x2="35" y2="-21" width="0.127" layer="51"/>
+<wire x1="35" y1="-21" x2="35" y2="-17" width="0.127" layer="51"/>
+<wire x1="30.5" y1="-6.55" x2="30.5" y2="6.55" width="0.127" layer="51"/>
+<wire x1="30.5" y1="6.55" x2="29.5" y2="7.55" width="0.127" layer="51" curve="90"/>
+<wire x1="29.5" y1="7.55" x2="-29.5" y2="7.55" width="0.127" layer="51"/>
+<wire x1="-29.5" y1="7.55" x2="-30.5" y2="6.55" width="0.127" layer="51" curve="90"/>
+<wire x1="-30.5" y1="6.55" x2="-30.5" y2="-6.55" width="0.127" layer="51"/>
+<wire x1="-30.5" y1="-6.55" x2="-29.5" y2="-7.55" width="0.127" layer="51" curve="90"/>
+<wire x1="-29.5" y1="-7.55" x2="29.5" y2="-7.55" width="0.127" layer="51"/>
+<wire x1="29.5" y1="-7.55" x2="30.5" y2="-6.55" width="0.127" layer="51" curve="90"/>
+<text x="-29.21" y="11.43" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="11.43" size="1.27" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIP3302W60P254L2400H500Q20B" urn="urn:adsk.eagle:package:5205227/1" locally_modified="yes" type="model">
@@ -2375,6 +2444,7 @@ design rules under a new name.</description>
 <element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="10k" x="82.07375" y="143.66875" rot="R270"/>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="220uf" x="19.52625" y="155.575" rot="R180"/>
 <element name="RX_______TX" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02_LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1" value="" x="8.5725" y="119.0625" rot="R90"/>
+<element name="U4" library="GEMS" package="NHD-C0220" value="NHD‐C0220" x="43.5" y="245.5"/>
 </elements>
 <signals>
 <signal name="GND">
