@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6800,17 +6800,17 @@ naming: grid - package width</description>
 <part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="2N2222" device="" package3d_urn="urn:adsk.eagle:package:28526/2"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="1k"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="36"/>
+<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="33"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="T3" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="2N2222" device="" package3d_urn="urn:adsk.eagle:package:28526/2"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="1k"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="36"/>
+<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="33"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="T4" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="2N2222" device="" package3d_urn="urn:adsk.eagle:package:28526/2"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="1k"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="47k"/>
-<part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="36"/>
+<part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/12" package3d_urn="urn:adsk.eagle:package:25938/1" value="33"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U4" library="GEMS" deviceset="NHD‐C0220" device=""/>
 <part name="C4" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uf"/>
@@ -6822,28 +6822,88 @@ naming: grid - package width</description>
 <plain>
 </plain>
 <instances>
-<instance part="SCREEN" gate="G$1" x="138.43" y="15.24"/>
-<instance part="GND12" gate="1" x="146.05" y="7.62"/>
-<instance part="GND13" gate="1" x="168.91" y="15.24"/>
-<instance part="T2" gate="G$1" x="186.69" y="48.26"/>
-<instance part="R2" gate="G$1" x="168.91" y="48.26"/>
-<instance part="R5" gate="G$1" x="179.07" y="35.56" rot="R90"/>
-<instance part="R6" gate="G$1" x="189.23" y="35.56" rot="R90"/>
-<instance part="GND14" gate="1" x="189.23" y="25.4"/>
-<instance part="T3" gate="G$1" x="278.13" y="48.26"/>
-<instance part="R4" gate="G$1" x="260.35" y="48.26"/>
-<instance part="R7" gate="G$1" x="270.51" y="35.56" rot="R90"/>
-<instance part="R8" gate="G$1" x="280.67" y="35.56" rot="R90"/>
-<instance part="GND15" gate="1" x="280.67" y="25.4"/>
-<instance part="T4" gate="G$1" x="372.11" y="48.26"/>
-<instance part="R9" gate="G$1" x="354.33" y="48.26"/>
-<instance part="R10" gate="G$1" x="364.49" y="35.56" rot="R90"/>
-<instance part="R11" gate="G$1" x="374.65" y="35.56" rot="R90"/>
-<instance part="GND16" gate="1" x="374.65" y="25.4"/>
-<instance part="U4" gate="G$1" x="62.23" y="48.26"/>
-<instance part="C4" gate="G$1" x="92.71" y="40.64"/>
-<instance part="C5" gate="G$1" x="82.55" y="15.24" rot="R90"/>
-<instance part="GND18" gate="1" x="80.01" y="7.62"/>
+<instance part="SCREEN" gate="G$1" x="138.43" y="15.24">
+<attribute name="VALUE" x="134.62" y="5.334" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="134.62" y="23.368" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="GND12" gate="1" x="146.05" y="7.62">
+<attribute name="VALUE" x="143.51" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="GND13" gate="1" x="168.91" y="15.24">
+<attribute name="VALUE" x="166.37" y="12.7" size="1.778" layer="96"/>
+</instance>
+<instance part="T2" gate="G$1" x="186.69" y="48.26">
+<attribute name="NAME" x="176.53" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.53" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="168.91" y="48.26">
+<attribute name="NAME" x="165.1" y="49.7586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.1" y="44.958" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="179.07" y="35.56" rot="R90">
+<attribute name="NAME" x="177.5714" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="182.372" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="189.23" y="35.56" rot="R90">
+<attribute name="NAME" x="187.7314" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="192.532" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND14" gate="1" x="189.23" y="25.4">
+<attribute name="VALUE" x="186.69" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="T3" gate="G$1" x="278.13" y="48.26">
+<attribute name="NAME" x="267.97" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="267.97" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="260.35" y="48.26">
+<attribute name="NAME" x="256.54" y="49.7586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="44.958" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="270.51" y="35.56" rot="R90">
+<attribute name="NAME" x="269.0114" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="273.812" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R8" gate="G$1" x="280.67" y="35.56" rot="R90">
+<attribute name="NAME" x="279.1714" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="283.972" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND15" gate="1" x="280.67" y="25.4">
+<attribute name="VALUE" x="278.13" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="T4" gate="G$1" x="372.11" y="48.26">
+<attribute name="NAME" x="361.95" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="361.95" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="354.33" y="48.26">
+<attribute name="NAME" x="350.52" y="49.7586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="350.52" y="44.958" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="364.49" y="35.56" rot="R90">
+<attribute name="NAME" x="362.9914" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="367.792" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R11" gate="G$1" x="374.65" y="35.56" rot="R90">
+<attribute name="NAME" x="373.1514" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="377.952" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND16" gate="1" x="374.65" y="25.4">
+<attribute name="VALUE" x="372.11" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="U4" gate="G$1" x="62.23" y="48.26">
+<attribute name="NAME" x="62.23" y="63.754" size="1.27" layer="95"/>
+<attribute name="VALUE" x="62.23" y="61.722" size="1.27" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="92.71" y="40.64">
+<attribute name="NAME" x="94.234" y="41.021" size="1.778" layer="95"/>
+<attribute name="VALUE" x="94.234" y="35.941" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="82.55" y="15.24" rot="R90">
+<attribute name="NAME" x="82.169" y="16.764" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="87.249" y="16.764" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND18" gate="1" x="80.01" y="7.62">
+<attribute name="VALUE" x="77.47" y="5.08" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>

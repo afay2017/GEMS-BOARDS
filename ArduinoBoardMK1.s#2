@@ -8467,8 +8467,6 @@ part number 2062-2P from STA</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,81.28,-58.42,N$14,,,,,"/>
-<approved hash="106,1,81.28,-66.04,N$18,,,,,"/>
 <approved hash="106,1,-68.58,48.26,N$21,,,,,"/>
 <approved hash="106,1,-68.58,45.72,N$22,,,,,"/>
 <approved hash="113,1,29.2365,57.3126,TEMPERATURE1,,,,,"/>
