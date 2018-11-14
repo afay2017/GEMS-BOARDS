@@ -14191,6 +14191,113 @@ Product Page : &lt;a href="https://docs.particle.io/datasheets/electron-(cellula
 </deviceset>
 </devicesets>
 </library>
+<library name="GEMS">
+<packages>
+<package name="DIP3302W60P254L2400H500Q20B" urn="urn:adsk.eagle:footprint:5205235/1" locally_modified="yes">
+<description>20-DIP, 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span, 24.00 X 35.00 X 5.00 mm body
+&lt;p&gt;20-pin DIP package with 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span with body size 24.00 X 35.00 X 5.00 mm&lt;/p&gt;</description>
+<circle x="-18.004" y="11.43" radius="0.25" width="0" layer="21"/>
+<wire x1="-17.5" y1="12.5683" x2="17.5" y2="12.5683" width="0.12" layer="21"/>
+<wire x1="-17.5" y1="-12.5683" x2="17.5" y2="-12.5683" width="0.12" layer="21"/>
+<wire x1="17.5" y1="-12" x2="-17.5" y2="-12" width="0.12" layer="51"/>
+<wire x1="-17.5" y1="-12" x2="-17.5" y2="12" width="0.12" layer="51"/>
+<wire x1="-17.5" y1="12" x2="17.5" y2="12" width="0.12" layer="51"/>
+<wire x1="17.5" y1="12" x2="17.5" y2="-12" width="0.12" layer="51"/>
+<pad name="INA" x="-16.51" y="11.43" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="ENA" x="-16.51" y="8.89" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="PWM" x="-16.51" y="6.35" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="CS" x="-16.51" y="3.81" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
+<pad name="ENB" x="-16.51" y="1.27" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
+<pad name="INB" x="-16.51" y="-1.27" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
+<pad name="VDD" x="-16.51" y="-3.81" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="GND1" x="-16.51" y="-6.35" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="VOUT" x="-16.51" y="-8.89" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="GND2" x="-16.51" y="-11.43" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="VIN2" x="16.51" y="-6.35" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="VIN1" x="16.51" y="-3.81" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="GND4" x="16.51" y="-1.27" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="GND3" x="16.51" y="1.27" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="OUTB2" x="16.51" y="3.81" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="OUTB1" x="16.51" y="6.35" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="OUTA2" x="16.51" y="8.89" drill="1.0485" diameter="1.6485" shape="long"/>
+<pad name="OUTA1" x="16.51" y="11.43" drill="1.0485" diameter="1.6485" shape="long"/>
+<text x="0" y="13.2033" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-13.2033" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIP3302W60P254L2400H500Q20B" urn="urn:adsk.eagle:package:5205227/1" locally_modified="yes" type="model">
+<description>20-DIP, 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span, 24.00 X 35.00 X 5.00 mm body
+&lt;p&gt;20-pin DIP package with 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span with body size 24.00 X 35.00 X 5.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIP3302W60P254L2400H500Q20B"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="VNH5019SYMBOL">
+<pin name="OUTA1" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="OUTA2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="OUTB1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OUTB2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND3" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VIN1" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VIN2" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="INA" x="-15.24" y="10.16" length="middle"/>
+<pin name="ENA" x="-15.24" y="7.62" length="middle"/>
+<pin name="PWM" x="-15.24" y="5.08" length="middle"/>
+<pin name="CS" x="-15.24" y="2.54" length="middle"/>
+<pin name="ENB" x="-15.24" y="0" length="middle"/>
+<pin name="INB" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VDD" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND1" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VOUT" x="-15.24" y="-10.16" length="middle"/>
+<pin name="GND2" x="-15.24" y="-12.7" length="middle"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VNH5019">
+<gates>
+<gate name="G$1" symbol="VNH5019SYMBOL" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="VNH5019BOARD" package="DIP3302W60P254L2400H500Q20B">
+<connects>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="ENA" pad="ENA"/>
+<connect gate="G$1" pin="ENB" pad="ENB"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="OUTA1" pad="OUTA1"/>
+<connect gate="G$1" pin="OUTA2" pad="OUTA2"/>
+<connect gate="G$1" pin="OUTB1" pad="OUTB1"/>
+<connect gate="G$1" pin="OUTB2" pad="OUTB2"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VIN1" pad="VIN1"/>
+<connect gate="G$1" pin="VIN2" pad="VIN2"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5205227/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -21778,113 +21885,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="VNH">
-<packages>
-<package name="DIP3302W60P254L2400H500Q20B" urn="urn:adsk.eagle:footprint:5205235/1" locally_modified="yes">
-<description>20-DIP, 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span, 24.00 X 35.00 X 5.00 mm body
-&lt;p&gt;20-pin DIP package with 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span with body size 24.00 X 35.00 X 5.00 mm&lt;/p&gt;</description>
-<circle x="-18.004" y="11.43" radius="0.25" width="0" layer="21"/>
-<wire x1="-17.5" y1="12.5683" x2="17.5" y2="12.5683" width="0.12" layer="21"/>
-<wire x1="-17.5" y1="-12.5683" x2="17.5" y2="-12.5683" width="0.12" layer="21"/>
-<wire x1="19.05" y1="-12" x2="-19.05" y2="-12" width="0.12" layer="51"/>
-<wire x1="-19.05" y1="-12" x2="-19.05" y2="12" width="0.12" layer="51"/>
-<wire x1="-19.05" y1="12" x2="19.05" y2="12" width="0.12" layer="51"/>
-<wire x1="19.05" y1="12" x2="19.05" y2="-12" width="0.12" layer="51"/>
-<pad name="INA" x="-17.78" y="11.43" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="ENA" x="-17.78" y="8.89" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="PWM" x="-17.78" y="6.35" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="CS" x="-17.78" y="3.81" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
-<pad name="ENB" x="-17.78" y="1.27" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
-<pad name="INB" x="-17.78" y="-1.27" drill="1.0485" diameter="1.6485" shape="long" rot="R180"/>
-<pad name="VDD" x="-17.78" y="-3.81" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="GND1" x="-17.78" y="-6.35" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="VOUT" x="-17.78" y="-8.89" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="GND2" x="-17.78" y="-11.43" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="VIN2" x="17.78" y="-6.35" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="VIN1" x="17.78" y="-3.81" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="GND4" x="17.78" y="-1.27" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="GND3" x="17.78" y="1.27" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="OUTB2" x="17.78" y="3.81" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="OUTB1" x="17.78" y="6.35" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="OUTA2" x="17.78" y="8.89" drill="1.0485" diameter="1.6485" shape="long"/>
-<pad name="OUTA1" x="17.78" y="11.43" drill="1.0485" diameter="1.6485" shape="long"/>
-<text x="0" y="13.2033" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-13.2033" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="DIP3302W60P254L2400H500Q20B" urn="urn:adsk.eagle:package:5205227/1" locally_modified="yes" type="model">
-<description>20-DIP, 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span, 24.00 X 35.00 X 5.00 mm body
-&lt;p&gt;20-pin DIP package with 2.54 mm (0.10 in) pitch, 33.02 mm (1.30 in) span with body size 24.00 X 35.00 X 5.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="DIP3302W60P254L2400H500Q20B"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="VNH5019SYMBOL">
-<pin name="OUTA1" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="OUTA2" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="OUTB1" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="OUTB2" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="GND3" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GND4" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="VIN1" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="VIN2" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="INA" x="-15.24" y="10.16" length="middle"/>
-<pin name="ENA" x="-15.24" y="7.62" length="middle"/>
-<pin name="PWM" x="-15.24" y="5.08" length="middle"/>
-<pin name="CS" x="-15.24" y="2.54" length="middle"/>
-<pin name="ENB" x="-15.24" y="0" length="middle"/>
-<pin name="INB" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VDD" x="-15.24" y="-5.08" length="middle"/>
-<pin name="GND1" x="-15.24" y="-7.62" length="middle"/>
-<pin name="VOUT" x="-15.24" y="-10.16" length="middle"/>
-<pin name="GND2" x="-15.24" y="-12.7" length="middle"/>
-<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VNH5019">
-<gates>
-<gate name="G$1" symbol="VNH5019SYMBOL" x="7.62" y="0"/>
-</gates>
-<devices>
-<device name="VNH5019BOARD" package="DIP3302W60P254L2400H500Q20B">
-<connects>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="ENA" pad="ENA"/>
-<connect gate="G$1" pin="ENB" pad="ENB"/>
-<connect gate="G$1" pin="GND1" pad="GND1"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="GND3" pad="GND3"/>
-<connect gate="G$1" pin="GND4" pad="GND4"/>
-<connect gate="G$1" pin="INA" pad="INA"/>
-<connect gate="G$1" pin="INB" pad="INB"/>
-<connect gate="G$1" pin="OUTA1" pad="OUTA1"/>
-<connect gate="G$1" pin="OUTA2" pad="OUTA2"/>
-<connect gate="G$1" pin="OUTB1" pad="OUTB1"/>
-<connect gate="G$1" pin="OUTB2" pad="OUTB2"/>
-<connect gate="G$1" pin="PWM" pad="PWM"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VIN1" pad="VIN1"/>
-<connect gate="G$1" pin="VIN2" pad="VIN2"/>
-<connect gate="G$1" pin="VOUT" pad="VOUT"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5205227/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21901,7 +21901,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="Particle-Devices" deviceset="ELECTRON" device="_WITH_HEADERS"/>
-<part name="U$2" library="VNH" deviceset="VNH5019" device="VNH5019BOARD" package3d_urn="urn:adsk.eagle:package:5205227/1"/>
+<part name="U$2" library="GEMS" deviceset="VNH5019" device="VNH5019BOARD" package3d_urn="urn:adsk.eagle:package:5205227/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="12V" library="con-phoenix-smkdsp" library_urn="urn:adsk.eagle:library:180" deviceset="SMKDSP_1,5/2" device="" package3d_urn="urn:adsk.eagle:package:9814/1"/>
