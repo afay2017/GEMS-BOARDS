@@ -10100,7 +10100,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="MICRO" gate="G$1" pin="IO11*"/>
 <wire x1="-129.54" y1="10.16" x2="-144.78" y2="10.16" width="0.1524" layer="91"/>
-<label x="-182.88" y="7.62" size="1.778" layer="95"/>
+<label x="-182.88" y="7.62" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J2" gate="J1" pin="6"/>
 <wire x1="-160.02" y1="7.62" x2="-147.32" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="7.62" x2="-144.78" y2="10.16" width="0.1524" layer="91"/>
@@ -10119,7 +10119,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="MICRO" gate="G$1" pin="IO10*"/>
 <wire x1="-129.54" y1="12.7" x2="-147.32" y2="12.7" width="0.1524" layer="91"/>
-<label x="-185.42" y="10.16" size="1.778" layer="95"/>
+<label x="-185.42" y="10.16" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J2" gate="J1" pin="5"/>
 <wire x1="-160.02" y1="10.16" x2="-149.86" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="10.16" x2="-147.32" y2="12.7" width="0.1524" layer="91"/>
@@ -10134,7 +10134,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="MICRO" gate="G$1" pin="IO9*"/>
 <wire x1="-129.54" y1="15.24" x2="-149.86" y2="15.24" width="0.1524" layer="91"/>
-<label x="-190.5" y="12.7" size="1.778" layer="95"/>
+<label x="-190.5" y="12.7" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J2" gate="J1" pin="4"/>
 <wire x1="-160.02" y1="12.7" x2="-152.4" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-152.4" y1="12.7" x2="-149.86" y2="15.24" width="0.1524" layer="91"/>
@@ -10166,6 +10166,13 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="81.28" y1="-60.96" x2="76.2" y2="-60.96" width="0.1524" layer="91"/>
 <label x="53.34" y="-60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="D5*"/>
+<wire x1="-129.54" y1="25.4" x2="-157.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="25.4" x2="-160.02" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J1" pin="10"/>
+<label x="-172.72" y="27.94" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="PELTIER-INB" class="0">
 <segment>
@@ -10176,12 +10183,20 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="81.28" y1="-68.58" x2="71.12" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-68.58" x2="71.12" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="D4*"/>
+<pinref part="J1" gate="J1" pin="9"/>
+<wire x1="-160.02" y1="30.48" x2="-157.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="30.48" x2="-154.94" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="27.94" x2="-129.54" y2="27.94" width="0.1524" layer="91"/>
+<label x="-172.72" y="30.48" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="PELTIER-INA" class="0">
 <segment>
 <pinref part="MICRO" gate="G$1" pin="D6*"/>
 <wire x1="-129.54" y1="22.86" x2="-157.48" y2="22.86" width="0.1524" layer="91"/>
-<label x="-187.96" y="20.32" size="1.778" layer="95"/>
+<label x="-187.96" y="20.32" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J2" gate="J1" pin="1"/>
 <wire x1="-160.02" y1="20.32" x2="-157.48" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -10264,6 +10279,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="-12.7" y="88.9" size="1.778" layer="95"/>
 <pinref part="SDA__SCL1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="D3/SCL"/>
+<wire x1="-129.54" y1="30.48" x2="-152.4" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J1" pin="8"/>
+<wire x1="-152.4" y1="30.48" x2="-154.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="33.02" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="-180.34" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -10290,7 +10313,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="MICRO" gate="G$1" pin="IO12*"/>
 <wire x1="-129.54" y1="7.62" x2="-142.24" y2="7.62" width="0.1524" layer="91"/>
-<label x="-195.58" y="5.08" size="1.778" layer="95"/>
+<label x="-195.58" y="5.08" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J2" gate="J1" pin="7"/>
 <wire x1="-160.02" y1="5.08" x2="-144.78" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="5.08" x2="-142.24" y2="7.62" width="0.1524" layer="91"/>
@@ -10352,40 +10375,23 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="30.48" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 <label x="40.64" y="55.88" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="MICRO" gate="G$1" pin="D5*"/>
-<wire x1="-129.54" y1="25.4" x2="-157.48" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="25.4" x2="-160.02" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J1" gate="J1" pin="10"/>
+<pinref part="J3" gate="J1" pin="3"/>
+<wire x1="-48.26" y1="15.24" x2="-53.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="15.24" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="MICRO" gate="G$1" pin="A1"/>
+<wire x1="-55.88" y1="17.78" x2="-93.98" y2="17.78" width="0.1524" layer="91"/>
+<label x="-88.9" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="MICRO" gate="G$1" pin="D4*"/>
-<pinref part="J1" gate="J1" pin="9"/>
-<wire x1="-160.02" y1="30.48" x2="-157.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="30.48" x2="-154.94" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="27.94" x2="-129.54" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="MICRO" gate="G$1" pin="D3/SCL"/>
-<wire x1="-129.54" y1="30.48" x2="-152.4" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="J1" gate="J1" pin="8"/>
-<wire x1="-152.4" y1="30.48" x2="-154.94" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="33.02" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
+<net name="SDL" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="7"/>
 <wire x1="-160.02" y1="35.56" x2="-152.4" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-152.4" y1="35.56" x2="-149.86" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="MICRO" gate="G$1" pin="D2/SDA"/>
 <wire x1="-149.86" y1="33.02" x2="-129.54" y2="33.02" width="0.1524" layer="91"/>
+<label x="-177.8" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -10457,15 +10463,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="-50.8" y1="17.78" x2="-53.34" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="MICRO" gate="G$1" pin="A2"/>
 <wire x1="-53.34" y1="20.32" x2="-93.98" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="J3" gate="J1" pin="3"/>
-<wire x1="-48.26" y1="15.24" x2="-53.34" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="15.24" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="MICRO" gate="G$1" pin="A1"/>
-<wire x1="-55.88" y1="17.78" x2="-93.98" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
