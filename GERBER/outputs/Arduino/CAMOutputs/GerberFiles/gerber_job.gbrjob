@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2018-10-29T03:19:15Z",
+        "CreationDate": "2018-12-04T02:34:56Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,7 +13,7 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "ArduinoBoardMK1"
+            "ProjectId": "ArduinoBoardMKII"
         },
         "Owner": "Aidan Fay <aidanfay@stanford.edu>",
         "Size": {
