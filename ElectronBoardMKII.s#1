@@ -25395,7 +25395,7 @@ type 0309, grid 2.5 mm</description>
 <part name="RX_______TX" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1"/>
 <part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="AQY*" device="AQY27" package3d_urn="urn:adsk.eagle:package:24374/1"/>
 <part name="SUPPLY2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="VIN1" library="con-phoenix-smkdsp" library_urn="urn:adsk.eagle:library:180" deviceset="SMKDSP_1,5/2" device="" package3d_urn="urn:adsk.eagle:package:9814/1"/>
+<part name="LEDOUT" library="con-phoenix-smkdsp" library_urn="urn:adsk.eagle:library:180" deviceset="SMKDSP_1,5/2" device="" package3d_urn="urn:adsk.eagle:package:9814/1"/>
 <part name="LED1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1"/>
 <part name="LED2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1"/>
 <part name="LED3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="LOCK_LONGPADS" package3d_urn="urn:adsk.eagle:package:38047/1"/>
@@ -25650,11 +25650,11 @@ type 0309, grid 2.5 mm</description>
 <instance part="SUPPLY2" gate="1" x="-12.7" y="-17.78">
 <attribute name="VALUE" x="-15.24" y="-20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="VIN1" gate="-1" x="-40.64" y="-15.24" rot="MR180">
+<instance part="LEDOUT" gate="-1" x="-40.64" y="-15.24" rot="MR180">
 <attribute name="NAME" x="-41.91" y="-16.129" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-44.45" y="-17.907" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="VIN1" gate="-2" x="-40.64" y="22.86" rot="MR180">
+<instance part="LEDOUT" gate="-2" x="-40.64" y="22.86" rot="MR180">
 <attribute name="NAME" x="-41.91" y="21.971" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-27.94" y="-7.62">
@@ -25870,7 +25870,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-15.24" x2="10.16" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="10.16" y="-15.24"/>
-<pinref part="VIN1" gate="-1" pin="KL"/>
+<pinref part="LEDOUT" gate="-1" pin="KL"/>
 <wire x1="-35.56" y1="-15.24" x2="-20.32" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-15.24"/>
 </segment>
@@ -26592,7 +26592,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-20.32" y1="22.86" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="K1" gate="G$1" pin="DS2"/>
 <wire x1="10.16" y1="22.86" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="VIN1" gate="-2" pin="KL"/>
+<pinref part="LEDOUT" gate="-2" pin="KL"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <junction x="-5.08" y="22.86"/>

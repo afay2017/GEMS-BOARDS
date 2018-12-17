@@ -25414,7 +25414,7 @@ type 0309, grid 2.5 mm</description>
 <part name="BIAS" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="CT6" package3d_urn="urn:adsk.eagle:package:22692/1" value="10k"/>
 <part name="SUPPLY5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="CPOL-US" device="E5-8.5" package3d_urn="urn:adsk.eagle:package:25860/1" value="1uf"/>
-<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1"/>
+<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" value="100k"/>
 <part name="J7" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="J2" device="X2MM" package3d_urn="urn:adsk.eagle:package:15506/1"/>
 </parts>
 <sheets>
