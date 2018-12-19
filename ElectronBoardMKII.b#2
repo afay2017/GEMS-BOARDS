@@ -2783,12 +2783,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="79.27975" y="110.90275" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="84.86775" y="110.90275" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="1uf" x="76.99375" y="130.65125" rot="R90">
-<attribute name="NAME" x="74.70775" y="134.79145" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="80.01635" y="128.13665" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="1uf" x="75.08875" y="131.60375" rot="R90">
+<attribute name="NAME" x="72.80275" y="135.74395" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="78.11135" y="129.08915" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0207/12" package3d_urn="urn:adsk.eagle:package:23489/1" value="10k" x="81.75625" y="129.38125" rot="R270">
-<attribute name="NAME" x="83.15325" y="132.55625" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="79.66075" y="136.36625" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="81.07045" y="131.66725" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:25860/1" value="220uf" x="57.62625" y="136.2075" rot="R180">
@@ -3146,9 +3146,9 @@ design rules under a new name.</description>
 <via x="58.7375" y="31.4325" extent="1-16" drill="0.35"/>
 <via x="62.5475" y="31.4325" extent="1-16" drill="0.35"/>
 <via x="62.5475" y="33.9725" extent="1-16" drill="0.35"/>
-<via x="76.99375" y="130.65125" extent="1-16" drill="0.35"/>
-<via x="78.89875" y="127.79375" extent="1-16" drill="0.35"/>
-<via x="75.08875" y="127.79375" extent="1-16" drill="0.35"/>
+<via x="75.08875" y="131.60375" extent="1-16" drill="0.35"/>
+<via x="75.08875" y="136.36625" extent="1-16" drill="0.35"/>
+<via x="75.08875" y="126.84125" extent="1-16" drill="0.35"/>
 <via x="54.61" y="57.15" extent="1-16" drill="0.35"/>
 <via x="38.735" y="82.55" extent="1-16" drill="0.35"/>
 <via x="5.3975" y="94.2975" extent="1-16" drill="0.35"/>
@@ -3617,8 +3617,8 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="U1" pad="7"/>
 <contactref element="C9" pad="+"/>
-<wire x1="79.91195" y1="125.19305" x2="79.91195" y2="121.3457" width="0.635" layer="1"/>
-<wire x1="79.91195" y1="125.19305" x2="76.99375" y2="128.11125" width="0.635" layer="1"/>
+<wire x1="79.91195" y1="124.24055" x2="79.91195" y2="121.3457" width="0.635" layer="1"/>
+<wire x1="79.91195" y1="124.24055" x2="75.08875" y2="129.06375" width="0.635" layer="1"/>
 <wire x1="79.91195" y1="121.3457" x2="77.7875" y2="119.22125" width="0.635" layer="1"/>
 </signal>
 <signal name="N$6">
